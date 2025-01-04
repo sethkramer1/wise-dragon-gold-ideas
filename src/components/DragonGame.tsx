@@ -35,7 +35,7 @@ const DragonGame = () => {
   };
 
   return (
-    <div className="min-h-screen bg-medieval p-4 flex flex-col items-center justify-center">
+    <div className="min-h-screen bg-[#658E85] p-4 flex flex-col items-center justify-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -56,14 +56,14 @@ const DragonGame = () => {
           <Input
             value={idea}
             onChange={(e) => setIdea(e.target.value)}
-            placeholder="Enter your idea..."
+            placeholder="Enter your idea for consideration by the wise dragon"
             className="bg-gray-800 border-dragonGold text-white placeholder-gray-400"
             disabled={isAnimating}
           />
           <Button
             type="submit"
             disabled={!idea.trim() || isAnimating}
-            className="bg-dragonGold hover:bg-yellow-600 text-medieval font-bold px-8 py-4 rounded-lg transition-colors duration-200 font-medieval"
+            className="bg-dragonGold hover:bg-yellow-600 text-medieval font-bold px-12 py-6 text-xl rounded-lg transition-colors duration-200 font-medieval"
           >
             Submit to the Dragon
           </Button>
