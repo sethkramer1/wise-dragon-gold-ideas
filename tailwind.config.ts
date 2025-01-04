@@ -18,6 +18,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        medieval: ['MedievalSharp', 'cursive'],
+      },
       colors: {
         dragonGreen: "#2E7D32",
         dragonGold: "#FFD700",

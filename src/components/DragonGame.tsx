@@ -41,11 +41,11 @@ const DragonGame = () => {
         animate={{ opacity: 1, y: 0 }}
         className="w-full max-w-2xl mx-auto text-center"
       >
-        <h1 className="text-4xl md:text-6xl font-bold text-dragonGold mb-8">
+        <h1 className="text-4xl md:text-6xl font-bold text-dragonGold mb-8 font-medieval">
           The Wise Dragon
         </h1>
         <p className="text-lg md:text-xl text-gray-300 mb-12">
-          Present your idea to the dragon (1-5 words for approval)
+          Present your idea to the dragon
         </p>
 
         <div className="relative mb-16">
@@ -63,7 +63,7 @@ const DragonGame = () => {
           <Button
             type="submit"
             disabled={!idea.trim() || isAnimating}
-            className="bg-dragonGold hover:bg-yellow-600 text-medieval font-bold px-8 py-4 rounded-lg transition-colors duration-200"
+            className="bg-dragonGold hover:bg-yellow-600 text-medieval font-bold px-8 py-4 rounded-lg transition-colors duration-200 font-medieval"
           >
             Submit to the Dragon
           </Button>
